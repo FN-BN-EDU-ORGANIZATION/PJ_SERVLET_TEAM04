@@ -1,0 +1,86 @@
+.wrapper>main {
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+    bottom: 10vh;
+}
+
+.wrapper>main>.wrapper-body {}
+
+/* section 수정 */
+.wrapper>main>.wrapper-body>section:nth-child(1) {
+    top: 10vh;
+    list-style: none;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main>.wrapper-body>section:nth-child(1)>.addr {
+    margin: 1vh;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper>main>.wrapper-body>section:nth-child(1)>.addr>li {}
+
+/* weather-icon 수정: width 추가 */
+.wrapper>main>.wrapper-body>section:nth-child(1)>.weather-icon {
+    margin: 1vh;
+    display: flex;
+    justify-content: center;
+    width: 21vh;
+}
+
+.wrapper>main>.wrapper-body>section:nth-child(1)>.weather-text {
+    margin: 1vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* fcst 수정: right값 변경 */
+.wrapper>main>.wrapper-body>section:nth-child(1)>.fcst {
+    /* border: 3px solid darkcyan; */
+    background-color: darkcyan;
+    position: absolute;
+    right: 34vh;
+    width: 32vh;
+    height: 50vh;
+}
+
+/* fcst 하위 a태그,list 추가 */
+.wrapper>main>.wrapper-body>section:nth-child(1)>.fcst>a {
+    display: flex;
+}
+.wrapper>main>.wrapper-body>section:nth-child(1)>.fcst>a>li{
+    display: flex;
+    align-items: center;
+    margin-left: 1vh;
+}
+
+
+.wrapper>main> .wrapper-body>section:nth-child(2)> .says{}
+.wrapper>main> .wrapper-body>section:nth-child(2)> .says .swiper{
+    width: 40%;
+    height: 62px;
+}
+.wrapper>main> .wrapper-body>section:nth-child(2)> .says>div:nth-child(1){
+    position: absolute;
+    left: 50%;
+    top : 60vh;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
+}
+.wrapper>main> .wrapper-body>section:nth-child(2)> .says>div:nth-child(2){
+    position: absolute;
+    left: 55%;
+    top : 66vh;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 18px;
+}
